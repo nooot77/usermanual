@@ -1,0 +1,18 @@
+
+legend h1{
+
+  margin-left: 400px;
+}
+.col-md-4 {
+  padding-left: 50px;
+width: 1200px;
+  height: auto;
+}
+.col-md-5{
+  padding-left: 50px;
+width: 1200px;
+  height: auto;
+}
+label{
+  float: left;
+}

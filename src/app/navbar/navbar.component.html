@@ -1,0 +1,26 @@
+<div class="navbar" style="border-radius: 10px 10px 0 0;">
+    <div class="navbar-inner" style="border-radius:  0;">
+        <div class="navbar-container">
+            <a href="#">
+              <img src="https://me.classera.com/img/classera_logo_white.png?1505287557" alt="">
+            </a>
+
+
+
+                          <ul class="nav navbar-nav navbar-right">
+
+                            <li *ngIf="authenticated" ><a [routerLink]="['/add-post']">Add Post</a></li>
+
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li *ngIf="!authenticated"><a (click)="login()">Login</a> </li>
+                            <li *ngIf="authenticated"><a (click)="logout()">Logout</a></li>
+                          </ul>
+
+          </div>
+
+
+
+          </div>
+
+        </div>

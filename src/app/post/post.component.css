@@ -1,0 +1,35 @@
+.breadcrumb{
+  min-width: 300px;
+  max-width: 400px;
+  width: auto;
+  border-radius: 20px;
+  background-color: rgba(222, 222, 222, 0.41);
+}
+h1{
+  margin-right:30px;
+  font-size: 40px;
+  font-family:serif;
+  text-transform: capitalize;
+  padding: 30px;
+}
+.header{
+
+  text-align: center;
+}
+.header a{
+  text-decoration: none;
+  color:#333336;
+}
+.container{
+height: auto;
+width: 920px;
+margin-right: 20px;
+}
+.back{
+  margin-left: 0px;
+
+}
+.glyphicon {
+  color: #11a2ed;
+  margin-left: 20px;
+}

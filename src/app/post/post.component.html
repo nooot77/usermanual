@@ -1,0 +1,17 @@
+<div *ngIf="post">
+  <a [routerLink]="['/posts']">Go Back</a>
+  <br>
+  
+  <div class="row" >
+    <div class="col-md-8">
+      <ul class="list-group">
+        <li class="list-group-item">Title: {{post.title}}</li>
+        <li class="list-group-item" [innerHTML]="post.body"></li>
+        <img style="width:50%" class="thumbnail" src="{{imgUrl}}">
+      </ul>
+
+    </div>
+    <a class="btn btn-default" [routerLink]="['/edit-post/'+post.$key]">Edit</a>
+    <a (click)="onDeleteClick()" class="btn btn-danger">Delete</a>
+  </div>
+</div>

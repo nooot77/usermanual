@@ -1,0 +1,41 @@
+
+<a [routerLink]="['/posts']">Back</a>
+
+<form class="form-horizontal" (submit)="onAddSubmit($event)">
+<fieldset>
+
+<!-- Form Name -->
+
+<legend>
+  <h1>Add post</h1>
+</legend>
+
+<!-- Text input-->
+<div class="form-group"  >
+
+  <div class="col-md-5">
+  <input id="Title" name="Title" placeholder="Title" [(ngModel)]="title" class="form-control input-md" required="" type="text">
+
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+
+
+  <div class="col-md-4">
+    <textarea id="froala-editor" [froalaEditor] class="form-control"  [(ngModel)]="body"  name="body" required>Write here your manual </textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" value="submit" class="btn btn-success">submit</button>
+  </div>
+</div>
+
+</fieldset>
+
+</form>

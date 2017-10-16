@@ -1,0 +1,17 @@
+.container{
+width: auto;
+height: auto;
+margin-left: 200px;
+
+
+
+
+}
+header h1{
+align:center;
+  font-size: 60px;
+  margin-left: 40px;
+}
+:host ::ng-deep .search-highlight{
+  background-color: #F2E366;
+}

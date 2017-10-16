@@ -1,0 +1,37 @@
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input [(ngModel)]="term" type="text" placeholder="Type to search">
+            </div>
+
+            <nav>
+
+                <ul class="list">
+
+                    <li class="title">
+                        <a href="index.html">User Manual</a>
+                    </li>
+
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+
+                    </li>
+                      <li class="divider"></li>
+
+
+                    <li class="chapter"  *ngFor="let post of posts|filter:term">
+                        <a data-type="chapter-link"  routerLink="/post/{{post.$key}}">
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="link-name" [innerHtml]="post.title"></span>
+
+                            </div>
+                        </a>
+
+                    </li>
+                      <li class="divider"></li>
+                </ul>
+
+            </nav>
+        </div>

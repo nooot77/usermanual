@@ -1,0 +1,13 @@
+
+<div class="container" *ngIf="post">
+        <header>
+          <div class="edit">
+            <a class="btn btn-default" [routerLink]="['/edit-post/'+post.$key]">Edit</a>
+            <a (click)="onDeleteClick()" class="btn btn-danger">Delete</a>
+          </div>
+          <h1>{{post.title}}</h1>
+        </header>
+        <div  class="e2e-inner-html-bound" [innerHTML]="post.body">
+
+</div>
+</div>
